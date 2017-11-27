@@ -1,10 +1,123 @@
+*{
+	box-sizing:border-box;
+}
+
 h1, h2 {
-color:darkgreen;
+color:#43B050;
 font-family: 'Roboto', sans-serif;
 }
 
 body {
-background:#ccffb3;
+
 font-family: 'Pangolin', cursive;
 font-size: 120%;
+margin: 0;
+padding-bottom: 50px;
+}
+
+nav a{
+	padding: 7px;
+	background: #F8E7A2;
+	color: black;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	border-bottom: 1px solid black;
+	
+}
+
+.wrapper{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+img{ 
+
+max-width: 100%;
+vertical-align: top;
+}
+
+.drzac{
+background:red;
+display:flex;	
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+height: 400px;	
+}	
+.drzac div{
+	height:150px;
+    width: 150px;
+	background: black;
+	border-radius: 50%;
+	margin-bottom:20px;
+}
+
+header img{
+	width: 100%;
+}
+
+.naslovna .naslovna-nav{
+	background: #F3A377;
+}
+.aktivnosti .aktivnosti-nav{
+	background: #F3A377;
+}
+.kontakt .kontakt-nav{
+	background: #F3A377;
+}
+.o-psihodrami .o-psihodrami-nav{
+	background: #F3A377;
+}
+
+@media (min-width: 1000px) {
+	nav {
+		text-transform: uppercase;
+		text-align: center;
+		background: #F8E7A2;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	
+	nav a {
+		display: inline-block;
+		padding: 20px;
+		margin-right: 10px;
+		font-weight: bold;
+}
+
+footer{
+	background:#F8E7A2;
+	position: fixed;
+	bottom: 0;
+	width:100%;
+}
+
+.okvir-slike {
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	font-size: 80px;
+	text-decoration:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+.galerija img{
+	margin-bottom:4px;
+	filter:grayscale(0.7);
+		transition:0.8s;
+}
+img:hover{
+		filter:saturate(200%);
+}
+
+.kontakt-box{
+	width: 300px;
+	border: 5px dotted green;
+	border-radius: 20px;
+	padding: 30px;
+	box-sizing: border-box;
 }
